@@ -1,10 +1,11 @@
 # Leptos Starter Template
 
-This is a template demonstrating how to integrate [TailwindCSS](https://tailwindcss.com/) with the [Leptos](https://github.com/leptos-rs/leptos) web framework and the [trunk](https://github.com/thedodd/trunk) tool.
+This is a template demonstrating how to integrate [TailwindCSS](https://tailwindcss.com/) with the [Leptos](https://github.com/leptos-rs/leptos) web framework and the [trunk](https://github.com/thedodd/trunk) tool. 
+[Axum](https://www.github.com/tokio-rs/axum) support and support for deployment via [Shuttle](https://www.shuttle.rs) has also been added to this.
 
 Install Tailwind and build the CSS:
 
-`Trunk.toml` is configured to build the CSS automatically.
+`Trunk.toml` is configured to build the CSS automatically and build the static assets to the backend folder.
 
 Install trunk to client side render this bundle.
 
