@@ -1,6 +1,7 @@
 use leptos::*;
 use leptos_meta::*;
 use leptos_router::*;
+use chart_js_rs::{ChartOptions, Dataset, XYPoint, XYDataset, NoAnnotations};
 
 #[component]
 pub fn App(cx: Scope) -> impl IntoView {
