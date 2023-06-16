@@ -7,7 +7,7 @@ Install Tailwind and build the CSS:
 
 `Trunk.toml` is configured to build the CSS automatically and build the static assets to the backend folder.
 
-Install trunk to client side render this bundle.
+While you're building the frontend, you can use trunk to client side render this bundle - you can install it like so:
 
 `cargo install trunk`
 Then the site can be served with `trunk serve --open`
@@ -15,6 +15,30 @@ Then the site can be served with `trunk serve --open`
 The browser will automatically open [http://127.0.0.1:8080//](http://127.0.0.1:8080//)
 
 You can begin editing your app at `src/app.rs`.
+
+When you're ready to build your static assets, you can then build it into your backend folder:
+
+`trunk build`
+
+To use the backend folder, you'll need to install cargo-shuttle which you can install with the following command (also supports cargo-binstall):
+
+`cargo install cargo-shuttle`
+
+Then you can start running your app on the backend by using the following command (the following uses aliased cargo commands; for more information, go to .cargo/config.toml):
+
+`cargo sh`
+
+To deploy your app, you'll want to login to shuttle via GitHub then input your API key into the CLI:
+
+`cargo sh-login`
+
+Then you can start your project and deploy with the following commands:
+
+`cargo start && cargo deploy`
+
+If at any point you need to stop your deployed container, you can use `cargo stop`.
+
+
 
 ## Installing Tailwind
 

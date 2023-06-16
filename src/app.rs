@@ -1,7 +1,6 @@
 use leptos::*;
 use leptos_meta::*;
 use leptos_router::*;
-use chart_js_rs::{ChartOptions, Dataset, XYPoint, XYDataset, NoAnnotations};
 
 #[component]
 pub fn App(cx: Scope) -> impl IntoView {
@@ -27,7 +26,7 @@ fn Home(cx: Scope) -> impl IntoView {
         <div class="w-screen h-screen">
         <div class="my-0 mx-auto py-20 max-w-3xl text-center flex flex-col justify-center items-center">
             <h2 class="p-6 text-2xl text-center font-bold">"Welcome to Leptos with Tailwind & Axum"</h2>
-            <div class="grid grid-cols-2 grid-rows-2 gap-2 h-96 w-4/5">
+            <div class="grid grid-cols-2 grid-rows-2 gap-2 min-h-96 h-auto w-4/5">
                 <div class="text-center  rounded-md shadow-md p-4 flex flex-col gap-2 items-center bg-white/10">
                     <h2 class="text-center text-lg font-bold">"Built with Leptos"</h2>
                 <p class="text-md">"Leptos is a Rust webdev framework that leverages fine-grained reactivity to build declarative user interfaces."</p>

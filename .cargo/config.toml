@@ -1,0 +1,6 @@
+[alias]
+sh = "shuttle run --working-directory backend"
+sh-login = "shuttle login"
+sh-deploy = "shuttle deploy --allow-dirty"
+start = "shuttle project start"
+stop = "shuttle project stop"
